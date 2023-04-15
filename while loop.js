@@ -1,3 +1,34 @@
+//exercise 1
+const chorus = "Let's dance!";
+let repeat = 0;
+while (repeat < 10) {
+  if (repeat === 5) {
+    console.log("*change key*");
+  }
+  console.log(chorus);
+  repeat++;
+}
+console.log("Until the sun comes up!");
+
+//exercise 2
+
+let numbers = 100;
+
+while (numbers <= 200) {
+  if (numbers % 3 === 0 && numbers % 4 === 0) {
+    console.log("LoopyLighthouse");
+  } else if (numbers % 3 === 0) {
+    console.log("Loopy");
+  } else if (numbers % 4 === 0) {
+    console.log("Lighthouse");
+  } else {
+    console.log(numbers);
+  }
+  numbers = numbers + 1;
+}
+
+//exercise 3
+
 var num = 60;
 
 while (num >= 1) {
