@@ -1,11 +1,11 @@
-/* EXERCISE 1
+// EXERCISE 1
 const amounts = [61.00, 52.25, 112.99, 5.00]; 
 
 let total = 0;
 for (let sum of amounts) {
   total += sum;
 }
-console.log('Order total is: ', total);*/
+console.log('Order total is: ', total);
 
 
 //EXERCISE 2

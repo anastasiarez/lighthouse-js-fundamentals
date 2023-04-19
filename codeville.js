@@ -1,4 +1,4 @@
-/*OPTION 1
+// OPTION 1
 
 function finalPosition(moves) {
   let x = 0;
@@ -49,19 +49,21 @@ function finalPosition(moves) {
 const moves = ['north', 'north', 'west', 'west', 'north', 'east','north'];
 console.log(finalPosition(moves)); */
 
+//AGE CALCULATOR
 function ageCalculator(name, yearOfBirth, currentYear) {
   const math = currentYear - yearOfBirth;
   return`${name} is ${math} years old`
 }
 
-
-//AGE CALCULATOR
 console.log(ageCalculator("Miranda", 1990, 2023));
 
+//Hundreds
 function howManyHundreds (botteles){
   return Math.floor(botteles / 100)
 }
 
+
+//Shapes
 console.log(howManyHundreds(894));
 
 function calculateRectangleArea(length, width){
