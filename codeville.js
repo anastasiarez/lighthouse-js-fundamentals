@@ -47,7 +47,7 @@ function finalPosition(moves) {
 }
 
 const moves = ['north', 'north', 'west', 'west', 'north', 'east','north'];
-console.log(finalPosition(moves)); */
+console.log(finalPosition(moves));
 
 //AGE CALCULATOR
 function ageCalculator(name, yearOfBirth, currentYear) {

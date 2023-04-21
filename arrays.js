@@ -68,7 +68,7 @@ console.log(prices);
 
 //.SPLICE - SPECIFY INDEX, ADD NEW ELEMENTS TO THE ARRAY, DELETE ELEMENTS
 var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
-
+//index 2 "Blackberry", remove 2 elements "Blackberry" & "Blue", add "Yellow", "Green", "Purple". Push "Blue" in the end
 rainbow.splice(2, 2, "Yellow", "Green", "Purple");
 rainbow.push("Blue")
 
