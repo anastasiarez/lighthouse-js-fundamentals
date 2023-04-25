@@ -61,3 +61,24 @@ while (i < packingList.length) {
   console.log(packingList[i]);
   i++;
 }
+
+// LIST INRIDIENTS USING FOR LOOP
+
+const ingredients = ["eggs", "milk", "flour", "sugar", "baking soda", "baking powder", "chocolate chips", "bananas"];
+
+for (let i = 0; i < ingredients.length; i++){
+  console.log(ingredients[i])
+}
+
+//LIST INGRIDIENTS USING WHILE LOOP
+
+let i = 0;
+while (i < ingredients.length){
+  console.log(ingredients[i]);
+  i++;
+}
+
+//LIST INGRIDIENTS IN A REVERSE ORDER
+for (let i = ingredients.length - 1; i >= 0; i--){
+  console.log(ingredients[i])
+}

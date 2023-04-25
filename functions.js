@@ -110,3 +110,39 @@ const returnSayHello = function (name) {
 
 const greeting = returnSayHello("Anastasia");
 console.log(greeting);
+
+//AGE CALCULATOR
+function ageCalculator(name, yearOfBirth, currentYear) {
+  const math = currentYear - yearOfBirth;
+  return`${name} is ${math} years old`
+}
+
+console.log(ageCalculator("Miranda", 1990, 2023));
+
+//Hundreds
+function howManyHundreds (botteles){
+  return Math.floor(botteles / 100)
+}
+
+
+//Shapes
+console.log(howManyHundreds(894));
+
+function calculateRectangleArea(length, width){
+  if (length < 0 || width < 0) return;
+  let rectangle = length * width;
+  return rectangle;
+}
+function calculateTriangleArea(base, height){
+  if (base < 0 || height < 0) return;
+  let triangle = base * height / 2;
+  return triangle;
+}
+
+function calculateCircleArea(radius){
+if (radius < 0) return;
+let circle = Math.PI * Math.pow(radius,2);
+return circle;
+}
+
+console.log(calculateTriangleArea(10, 5))
