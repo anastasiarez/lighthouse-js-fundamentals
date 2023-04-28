@@ -146,3 +146,22 @@ return circle;
 }
 
 console.log(calculateTriangleArea(10, 5))
+
+//
+const sayHi = function(){
+alert("Hi!");
+}
+setTimeout(sayHi, 3000); //first parameter is sayHello and not sayHello()--this is how we pass the function itself as an parameter, rather than immediately calling the sayHello function and passing its return value (if it had one).
+
+//
+
+const sayWow = function(){
+  alert("Wow!");
+}
+
+const timer = setInterval(sayWow, 3000); 
+
+clearInterval(timer);
+
+//It's crucial to store that identifier inside variable for later because without it, the timer cannot be stopped!
+

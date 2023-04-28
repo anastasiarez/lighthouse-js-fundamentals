@@ -230,6 +230,8 @@ function lastIndexOf(array, value) {
   return -1
 }
 
+
+
 //
 
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1));
