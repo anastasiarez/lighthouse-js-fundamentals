@@ -241,23 +241,69 @@
 
 // POLUTION
 
-const checkAir = function (samples, threshold) {
-  let clean = 0;
-  let dirty = 0;
-  let calc;
-  for (let i = 0; i < samples.length; i++)
-    if (samples[i] === 'dirty') {
-      dirty++;
-      calc = dirty / samples.length;
-    }
-  if (calc > threshold) {
-    return "Polluted"
-  } else {
-    return "Clean"
-  }
-};
+// const checkAir = function (samples, threshold) {
+//   let clean = 0;
+//   let dirty = 0;
+//   let calc;
+//   for (let i = 0; i < samples.length; i++)
+//     if (samples[i] === 'dirty') {
+//       dirty++;
+//       calc = dirty / samples.length;
+//     }
+//   if (calc > threshold) {
+//     return "Polluted"
+//   } else {
+//     return "Clean"
+//   }
+// };
 
-console.log(checkAir(
-  ['clean', 'clean', 'dirty', 'clean', 'dirty', 'clean', 'clean', 'dirty', 'clean', 'dirty'],
-  0.1
-))
+// console.log(checkAir(
+//   ['clean', 'clean', 'dirty', 'clean', 'dirty', 'clean', 'clean', 'dirty', 'clean', 'dirty'],
+//   0.1
+// ))
+
+//REPEAT NUMBERS
+// const repeatNumbers = function(data) {
+//   let output = "";
+  
+// for (let i = 0; i < data.length; i++){
+//   let value = data[i][0];
+//   let count = data[i][1];
+//   output += String(value).repeat(count); //output += means output=output+String(value); The String(value) method is used to ensure that any numeric values are converted to strings before concatenating them.
+//   if (i < data.length - 1){
+//     output += ", ";
+//   }
+// }
+// return output;
+// };
+
+// console.log(repeatNumbers([[1, 10]]));
+// console.log(repeatNumbers([[1, 2], [2, 3]]));
+
+// CAMEL CASE
+
+// function camelCase(input) {
+//   let words = input.replace(/[^a-zA-Z0-9]/g, ' ').split(' '); //Remove any spaces or special characters from the string. Split the string into an array of words.
+//   for (let i = 1; i < words.length; i++) { // i = 1 because we need to start from the second word in the string, 1 is its index
+//     words[i] = words[i][0].toUpperCase() + words[i].substring(1); //.substring(1) is called on the string words[i] and returns a new string that starts at the second character (index 1) of the original string words[i] and continues to the end of the string.
+//   }
+//   return words.join(''); // join all the elements of an array into a single string.
+// }
+
+
+// console.log(camelCase("this is a string"));
+// //thisIsAString
+
+//Multiplication Table
+//To create a square multiplication table, we need to multiply each number in the range from 1 to maxValue with every other number in that same range. We can accomplish this by using two nested loops, where the outer loop iterates through the range of numbers from 1 to maxValue, and the inner loop iterates through the same range, multiplying the current outer loop value by each inner loop value.
+
+const multiplicationTable = function(maxValue) {
+  let table = '';
+  for (let i = 1; i <= maxValue; i++) {
+    for (let j = 1; j <= maxValue; j++) {
+      table += (i * j) + ' ';
+    }
+    table += '\n';
+  }
+  return table;
+};
