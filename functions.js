@@ -1,5 +1,5 @@
 // EXERCISE 1
-
+/*
 function makeLine(length){
   var line = "";
   for(var j =1; j <= length; j++){
@@ -164,4 +164,20 @@ const timer = setInterval(sayWow, 3000);
 clearInterval(timer);
 
 //It's crucial to store that identifier inside variable for later because without it, the timer cannot be stopped!
+*/
+//FARM
+function zeroPad(number, width) {
+  let string = String(number);
+  while (string.length < width) {
+    string = "0" + string;
+  }
+  return string;
+}
 
+function printFarmInventory(cows, chickens, pigs) {
+  console.log(`${zeroPad(cows, 3)} Cows`);
+  console.log(`${zeroPad(chickens, 3)} Chickens`);
+  console.log(`${zeroPad(pigs, 3)} Pigs`);
+}
+
+printFarmInventory(7, 16, 3);
